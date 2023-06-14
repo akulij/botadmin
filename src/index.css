@@ -5,7 +5,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* background-color: #242424; */
+  background-color: #003a5c;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -28,7 +29,7 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 h1 {
@@ -59,6 +60,8 @@ button:focus-visible {
   :root {
     color: #213547;
     background-color: #ffffff;
+    /* background-color: #01a2ff; */
+
   }
   a:hover {
     color: #747bff;
