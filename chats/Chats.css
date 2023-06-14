@@ -1,0 +1,38 @@
+.user_views {
+    display: inline-flex;
+    flex-direction: column;
+    border: 1px solid rgba(5, 5, 5, 0.06);
+    height: 100%;
+}
+
+.user_views h2 {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.user_view {
+    border: 1px solid rgba(5, 5, 5, 0.06);
+    display: inline-block;
+    width: 400px;
+    padding: 12px;
+
+    cursor: pointer;
+}
+
+.user_view:hover {
+    border: 1px solid #1677ff;
+}
+
+.view_userfulllname {
+    font-size: 20px;
+}
+
+.view_last_message {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  font-size: 16px;
+  color: rgba(33, 53, 71, 0.65);
+}

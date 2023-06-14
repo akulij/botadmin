@@ -1,0 +1,23 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.login_form {
+    min-width: 600px;
+    min-height: 350px;
+    border: 2px solid #111;
+    /* border: 2px solid #01a1ff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 20px;
+    /* background-color: #01a2ff; */
+    /* background-color: #f9f9f9; */
+    background-color: white;
+}
