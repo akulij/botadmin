@@ -16,6 +16,12 @@ const menu: MenuProps['items'] = [
         ),
         key: 'chats',
     },
+    {
+        label: (
+            <a href='/exit/'>Разлогиниться</a>
+        ),
+        key: 'exit',
+    },
 ]
 
 type MenuComponentProps = {

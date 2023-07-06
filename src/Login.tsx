@@ -5,18 +5,18 @@ import './Login.css'
 function App() {
     return (
         <div className='login_form'>
-        <Form action='/login' method='post'>
+          <form action='/login' method='post'>
             <h1>Вход в админ панель</h1>
-            <Form.Item>
-            <Input name='login' placeholder='Имя бота'></Input>
+            <Form.Item name='login'>
+            <Input name='login' placeholder='Логин' required></Input>
+            </Form.Item>
+            <Form.Item name='password'>
+            <Input.Password name='password' placeholder='Пароль' required></Input.Password>
             </Form.Item>
             <Form.Item>
-            <Input.Password name='password' placeholder='Пароль'></Input.Password>
+            <Button type='primary' htmlType='submit'>Войти</Button>
             </Form.Item>
-            <Form.Item>
-            <Button htmlType='submit'>Войти</Button>
-            </Form.Item>
-        </Form>
+          </form>
         </div>
     )
   return (

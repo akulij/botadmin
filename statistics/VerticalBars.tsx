@@ -1,8 +1,14 @@
 import { useRef, useEffect } from 'react';
 import Chart from 'chart.js/auto';
 
+export type BarData = {
+    chart_name: string;
+    labels: string[];
+    data: number[];
+}
+
 export interface Props {
-    data: number[]
+    data: BarData
 }
 
 const VerticalBars = (props: Props) => {
@@ -15,12 +21,12 @@ const VerticalBars = (props: Props) => {
     const chart = new Chart(chartCanvas!, {
       type: 'bar',
       data: {
-        labels: data.map((_, index) => index + 1),
+        labels: data.labels,
         datasets: [
           {
-            label: 'Vertical Bars',
-            data: data,
-            backgroundColor: '#4caf50',
+            label: data.chart_name,
+            data: data.data,
+            backgroundColor: '#1677ff',
           },
         ],
       },
@@ -32,9 +38,9 @@ const VerticalBars = (props: Props) => {
     return () => {
         chart.destroy();
     }
-  }, []);
+  }, [data]);
 
-  return <div style={{width: 360, margin: "0 auto"}}>
+  return <div style={{width: 360}}>
       <canvas ref={chartRef} />
     </div>;
 };
